@@ -1,0 +1,780 @@
+@import "bootstrap";
+@import "fontawesome";
+@import "flickity";
+@import "hint";
+// @import "select2";
+
+$primary_color: #3ec5fa;
+$black_color: #1d1d1f;
+$white_color: #fcfcfc;
+$dark_color: #1e2426;
+$dark_text_color: #aeb4bc;
+$text_color: #84959c;
+$red_color: #f84960;
+$blue_color: #0071e3;
+$green_color: #2bc682;
+$yellow_color: #fdbd40;
+$border_color: #eaecef;
+//colors
+
+@mixin transition($duration: 0.25s, $mode: ease-out) {
+  transition: all $duration $mode;
+  -moz-transition: all $duration $mode;
+  -ms-transition: all $duration $mode;
+  -webkit-transition: all $duration $mode;
+  -o-transition: all $duration $mode;
+}
+
+@mixin transform($property: scale(1.2)) {
+  transform: $property;
+  -moz-transform: $property;
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+}
+
+@mixin primaryGradient() {
+  background: #3492d1; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #3492d1 0%,
+    #3ec5fa 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #3492d1 0%,
+    #3ec5fa 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3492d1 0%,
+    #3ec5fa 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3492d1', endColorstr='#3ec5fa',GradientType=1 ); /* IE6-9 */
+}
+//functions
+
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IRANSansWeb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IRANSansWeb-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IRANSansWeb-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+//fonts
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select,
+textarea,
+button {
+  font-family: "iransans";
+  outline: 0;
+  resize: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.ltr-text {
+  display: inline-block;
+  direction: ltr;
+  text-align: right;
+  letter-spacing: 0.5px;
+}
+
+.wrapper {
+  position: relative;
+  padding: 4rem 0;
+}
+
+section {
+  &.eeeeee {
+    background-color: #eeeeee !important;
+  }
+
+  &.f5f5f5 {
+    background-color: #f5f5f5 !important;
+  }
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: $black_color;
+  overflow-x: hidden !important;
+}
+
+.rtl-version {
+  direction: rtl;
+  text-align: right;
+  font-family: "iransans";
+}
+
+.custom-form-group {
+  margin-bottom: 1rem;
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    color: $dark_color;
+    margin-bottom: 0.35rem;
+
+    small {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    display: inline-block;
+    font-family: "iransans";
+    border: 1px solid #c0c0c0;
+    background-color: $white_color;
+    padding: 0.75rem 1rem;
+    color: $text_color;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 8px;
+    @include transition();
+
+    &::placeholder {
+      color: #b8bcc4;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: #b8bcc4;
+    }
+
+    &::-ms-input-placeholder {
+      color: #b8bcc4;
+    }
+
+    &:focus {
+      border-color: $black_color;
+      box-shadow: unset;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95%;
+    height: 42px;
+    border: 1px solid #c0c0c0;
+    background-color: $white_color;
+    text-align: center;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    line-height: 42px;
+    color: #94979d;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1rem;
+      font-size: 1.5em;
+    }
+  }
+
+  .square-label {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 0.3rem;
+      border: 1px solid #c0c0c0;
+      margin-left: 0.5rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0.25rem;
+      top: 0.25rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 0.3rem;
+      background-color: $red_color;
+      @include transition;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+
+    &:checked ~ .custom-label {
+      color: $red_color;
+      border-color: $red_color;
+      font-weight: 700;
+      border-width: 2px;
+    }
+
+    &:checked ~ .square-label {
+      color: $red_color;
+      font-weight: 700;
+
+      &::before {
+        border-color: $red_color;
+      }
+
+      &::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 17px 6px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin: 6px;
+  font-family: "iransans";
+  cursor: pointer;
+  @include transition;
+  text-decoration: none;
+  font-weight: 400;
+
+  &.btn-default {
+    @include primaryGradient();
+    color: $black_color;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  &.btn-green {
+    background-color: rgba($color: $green_color, $alpha: 0.85);
+    color: $white_color;
+
+    &:hover {
+      background-color: rgba($color: $green_color, $alpha: 1);
+    }
+  }
+
+  &.btn-red {
+    background-color: rgba($color: $red_color, $alpha: 0.85);
+    color: $white_color;
+
+    &:hover {
+      background-color: rgba($color: $red_color, $alpha: 1);
+    }
+  }
+
+  &.btn-white {
+    background-color: $white_color;
+    color: $primary_color;
+
+    &.blue {
+      color: $blue_color;
+    }
+
+    &.transparent {
+      background-color: transparent;
+      box-shadow: 0 0 0 2px $white_color inset;
+
+      &:hover {
+        background-color: $white_color;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($color: $white_color, $alpha: 0.8);
+    }
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+    color: $primary_color;
+    border-color: $primary_color;
+
+    &:hover {
+      box-shadow: 0px 0px 0 5px rgba($color: $dark_color, $alpha: 0.15);
+      background-color: rgba($color: $white_color, $alpha: 0.1);
+    }
+  }
+
+  &.btn-blue {
+    background-color: rgba($color: $blue_color, $alpha: 0.85);
+    color: $white_color;
+
+    &:hover {
+      background-color: rgba($color: $blue_color, $alpha: 1);
+    }
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: unset;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 0 5px rgba($color: $dark_color, $alpha: 0.15);
+  }
+}
+
+.text-shadow {
+  text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: $primary_color;
+  color: $white_color;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 57px;
+  border-radius: 50%;
+  z-index: 2;
+  border: 0;
+  outline: 0;
+  @include transition();
+  @include transform($property: translateY(100px));
+  visibility: hidden;
+  opacity: 0;
+
+  i {
+    line-height: 0;
+    font-size: 1.65em;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 0 5px rgba($color: $primary_color, $alpha: 0.4);
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    @include transform($property: translateY(0px));
+  }
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.font-size-1x {
+  font-size: 1em;
+}
+
+.font-size-2x {
+  font-size: 1.25em;
+}
+
+.font-size-3x {
+  font-size: 1.5em;
+}
+
+.font-size-4x {
+  font-size: 2em;
+}
+
+.font-size-5x {
+  font-size: 3em;
+}
+
+.dir-rtl {
+  direction: rtl !important;
+}
+
+.dir-ltr {
+  direction: ltr !important;
+}
+
+.list-style-disc {
+  list-style-type: disc;
+}
+
+.text-center p {
+  text-align-last: center;
+}
+
+.o-auto {
+  overflow: auto;
+}
+
+.text-color {
+  color: $text_color !important;
+}
+
+.primary-color {
+  color: $primary_color !important;
+}
+
+.dark-text-color {
+  color: $dark_text_color !important;
+}
+
+.black-color {
+  color: $black_color !important;
+}
+
+.white-color {
+  color: $white_color !important;
+}
+
+.dark-color {
+  color: $dark_color !important;
+}
+
+.blue-color {
+  color: $blue_color !important;
+}
+
+.red-color {
+  color: $red_color !important;
+}
+
+.green-color {
+  color: $green_color !important;
+}
+
+.white-bg-color {
+  background-color: $white_color !important;
+}
+
+.red-bg-color {
+  background-color: $red_color !important;
+}
+
+.green-bg-color {
+  background-color: $green_color !important;
+}
+
+.page-link {
+  color: $primary_color;
+}
+
+.page-item.active .page-link {
+  background-color: $primary_color;
+  border-color: $primary_color;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 769px) {
+  .font-size-5x {
+    font-size: 2.25em;
+  }
+
+  .wrapper {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 577px) {
+  body {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2.25rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.75rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.25rem;
+  }
+
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    font-size: 1rem;
+  }
+
+  .font-size-2x {
+    font-size: 1em;
+  }
+
+  .font-size-3x {
+    font-size: 1.25em;
+  }
+
+  .font-size-4x {
+    font-size: 1.5em;
+  }
+
+  .font-size-5x {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 2.5rem 0;
+  }
+}

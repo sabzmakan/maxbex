@@ -1,0 +1,162 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/about.vue",
+    "chunkName": "pages/about",
+    "url": "/about",
+    "_name": "_ace4f910"
+  },
+  {
+    "name": "api",
+    "path": "/api",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/api/index.vue",
+    "chunkName": "pages/api/index",
+    "url": "/api",
+    "_name": "_40f42308"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/blog",
+    "_name": "_4504a44a"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/contact",
+    "_name": "_7eb759cb"
+  },
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/index.vue",
+    "chunkName": "pages/dashboard/index",
+    "url": "/dashboard",
+    "_name": "_d1cf0e7c"
+  },
+  {
+    "name": "forget-password",
+    "path": "/forget-password",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/forget-password/index.vue",
+    "chunkName": "pages/forget-password/index",
+    "url": "/forget-password",
+    "_name": "_760094ae"
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/news.vue",
+    "chunkName": "pages/news",
+    "url": "/news",
+    "_name": "_088a19b8"
+  },
+  {
+    "name": "api-binance",
+    "path": "/api/binance",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/api/binance.vue",
+    "chunkName": "pages/api/binance",
+    "url": "/api/binance",
+    "_name": "_70520b8c"
+  },
+  {
+    "name": "api-key",
+    "path": "/api/key",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/api/key.vue",
+    "chunkName": "pages/api/key",
+    "url": "/api/key",
+    "_name": "_78de9995"
+  },
+  {
+    "name": "blog-single",
+    "path": "/blog/single",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/blog/single.vue",
+    "chunkName": "pages/blog/single",
+    "url": "/blog/single",
+    "_name": "_681c8d00"
+  },
+  {
+    "name": "dashboard-account-details",
+    "path": "/dashboard/account-details",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/account-details.vue",
+    "chunkName": "pages/dashboard/account-details",
+    "url": "/dashboard/account-details",
+    "_name": "_6d14bc92"
+  },
+  {
+    "name": "dashboard-apikey",
+    "path": "/dashboard/apikey",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/apikey.vue",
+    "chunkName": "pages/dashboard/apikey",
+    "url": "/dashboard/apikey",
+    "_name": "_0ad95a76"
+  },
+  {
+    "name": "dashboard-chart",
+    "path": "/dashboard/chart",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/chart.vue",
+    "chunkName": "pages/dashboard/chart",
+    "url": "/dashboard/chart",
+    "_name": "_257ac1ce"
+  },
+  {
+    "name": "dashboard-market",
+    "path": "/dashboard/market",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/market.vue",
+    "chunkName": "pages/dashboard/market",
+    "url": "/dashboard/market",
+    "_name": "_64a63d7c"
+  },
+  {
+    "name": "dashboard-selectTst",
+    "path": "/dashboard/selectTst",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/selectTst.vue",
+    "chunkName": "pages/dashboard/selectTst",
+    "url": "/dashboard/selectTst",
+    "_name": "_4e9e08ae"
+  },
+  {
+    "name": "dashboard-setting",
+    "path": "/dashboard/setting",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/setting.vue",
+    "chunkName": "pages/dashboard/setting",
+    "url": "/dashboard/setting",
+    "_name": "_1a753940"
+  },
+  {
+    "name": "dashboard-your-coins",
+    "path": "/dashboard/your-coins",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/dashboard/your-coins.vue",
+    "chunkName": "pages/dashboard/your-coins",
+    "url": "/dashboard/your-coins",
+    "_name": "_2bc21528"
+  },
+  {
+    "name": "forget-password-new",
+    "path": "/forget-password/new",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/forget-password/new.vue",
+    "chunkName": "pages/forget-password/new",
+    "url": "/forget-password/new",
+    "_name": "_6cd6e337"
+  },
+  {
+    "name": "forget-password-verify",
+    "path": "/forget-password/verify",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/forget-password/verify.vue",
+    "chunkName": "pages/forget-password/verify",
+    "url": "/forget-password/verify",
+    "_name": "_737c2b32"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/ak_sabz/Downloads/maxbex/async/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_6d754386"
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "BarChart": {
+    "description": "Auto imported from /components/BarChart.js"
+  },
+  "LazyBarChart": {
+    "description": "Auto imported from /components/BarChart.js"
+  },
+  "AccountStatus": {
+    "description": "Auto imported from /components/dashboard/AccountStatus.vue"
+  },
+  "LazyAccountStatus": {
+    "description": "Auto imported from /components/dashboard/AccountStatus.vue"
+  },
+  "ApiModal": {
+    "description": "Auto imported from /components/dashboard/ApiModal.vue"
+  },
+  "LazyApiModal": {
+    "description": "Auto imported from /components/dashboard/ApiModal.vue"
+  },
+  "CustomMenu": {
+    "description": "Auto imported from /components/dashboard/CustomMenu.vue"
+  },
+  "LazyCustomMenu": {
+    "description": "Auto imported from /components/dashboard/CustomMenu.vue"
+  },
+  "DashMenu": {
+    "description": "Auto imported from /components/dashboard/DashMenu.vue"
+  },
+  "LazyDashMenu": {
+    "description": "Auto imported from /components/dashboard/DashMenu.vue"
+  },
+  "WelcomeBox": {
+    "description": "Auto imported from /components/dashboard/WelcomeBox.vue"
+  },
+  "LazyWelcomeBox": {
+    "description": "Auto imported from /components/dashboard/WelcomeBox.vue"
+  },
+  "NewsList": {
+    "description": "Auto imported from /components/news/NewsList.vue"
+  },
+  "LazyNewsList": {
+    "description": "Auto imported from /components/news/NewsList.vue"
+  },
+  "SearchAside": {
+    "description": "Auto imported from /components/news/SearchAside.vue"
+  },
+  "LazySearchAside": {
+    "description": "Auto imported from /components/news/SearchAside.vue"
+  },
+  "BlogWrapper": {
+    "description": "Auto imported from /components/home/BlogWrapper.vue"
+  },
+  "LazyBlogWrapper": {
+    "description": "Auto imported from /components/home/BlogWrapper.vue"
+  },
+  "CoinsWrapper": {
+    "description": "Auto imported from /components/home/CoinsWrapper.vue"
+  },
+  "LazyCoinsWrapper": {
+    "description": "Auto imported from /components/home/CoinsWrapper.vue"
+  },
+  "FeaturesWrapper": {
+    "description": "Auto imported from /components/home/FeaturesWrapper.vue"
+  },
+  "LazyFeaturesWrapper": {
+    "description": "Auto imported from /components/home/FeaturesWrapper.vue"
+  },
+  "IntroWrapper": {
+    "description": "Auto imported from /components/home/IntroWrapper.vue"
+  },
+  "LazyIntroWrapper": {
+    "description": "Auto imported from /components/home/IntroWrapper.vue"
+  },
+  "StartTrading": {
+    "description": "Auto imported from /components/home/StartTrading.vue"
+  },
+  "LazyStartTrading": {
+    "description": "Auto imported from /components/home/StartTrading.vue"
+  },
+  "StatusWrapper": {
+    "description": "Auto imported from /components/home/StatusWrapper.vue"
+  },
+  "LazyStatusWrapper": {
+    "description": "Auto imported from /components/home/StatusWrapper.vue"
+  },
+  "StepsWrapper": {
+    "description": "Auto imported from /components/home/StepsWrapper.vue"
+  },
+  "LazyStepsWrapper": {
+    "description": "Auto imported from /components/home/StepsWrapper.vue"
+  },
+  "Breadcrumb": {
+    "description": "Auto imported from /components/shared/Breadcrumb.vue"
+  },
+  "LazyBreadcrumb": {
+    "description": "Auto imported from /components/shared/Breadcrumb.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from /components/shared/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from /components/shared/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from /components/shared/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from /components/shared/Header.vue"
+  },
+  "Login": {
+    "description": "Auto imported from /components/shared/Login.vue"
+  },
+  "LazyLogin": {
+    "description": "Auto imported from /components/shared/Login.vue"
+  },
+  "Menu": {
+    "description": "Auto imported from /components/shared/Menu.vue"
+  },
+  "LazyMenu": {
+    "description": "Auto imported from /components/shared/Menu.vue"
+  },
+  "Register": {
+    "description": "Auto imported from /components/shared/Register.vue"
+  },
+  "LazyRegister": {
+    "description": "Auto imported from /components/shared/Register.vue"
+  }
+}
